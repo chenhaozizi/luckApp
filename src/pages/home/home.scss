@@ -1,3 +1,88 @@
 page-home {
+  .scroll-content {
+    padding-top: 0 !important;
+  }
 
+  .menu_top {
+    height: 36px;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    .menu_top_left {
+      border-radius: 36px;
+      width: 50%;
+      .user {
+        width: 30px;
+        height: 30px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+      }
+      .user_info {
+        justify-content: center;
+        align-items: flex-start;
+        .money_iocn{
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          text-align: center;
+          line-height: 16px;
+          margin-right:5px; 
+        }
+      }
+    }
+    .menu_top_right{
+      margin-left: 10%;
+      width: 40%;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .lottery_info{
+    height: 150px;
+    background: url(../../assets/icon/home_bannerbg.png) no-repeat;
+    background-size: 100%; 
+  }
+  .record_info{
+    right: 8px;
+    top: 3px;
+    text-align: center
+  }
+  .lottery_num{
+    width: 80%
+  }
+  .point{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%
+  }
+  .lottery_next{
+    letter-spacing: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    div{
+      display: inline-block;
+    }
+    .next_time{
+      span{
+        display: inline-block;
+        font-size: 1.4rem;
+        width: 27px;
+        background: #fff;
+        color: rgb(255, 109, 63);
+        margin: 0 6px;
+        border-radius:10px; 
+        text-align: center;
+      }
+
+    }
+  }
+  
 }

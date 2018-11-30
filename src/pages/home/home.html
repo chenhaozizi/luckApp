@@ -1,9 +1,56 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>首页</ion-title>
+<ion-header no-border>
+  <ion-navbar mode="ios">
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="close" color='dark'></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>新半价商城</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="more" color='dark'></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
- 
+<ion-content padding class="bg_main_color">
+  <div class="menu_top flex ">
+    <div class="menu_top_left flex bg_white">
+      <div class="user border_50 over_hidden"><img src="../../assets/imgs/logo.png" alt=""></div>
+      <div class="user_info flex flex_column flex_left_center ml20">
+        <div class="color82"><span class="border_50 bg_active_color ft28 money_iocn">币</span>32740.00 </div>
+        <div class="color165 ft22">ID:5261</div>
+      </div>
+    </div>
+    <div class="menu_top_right flex  flex_s_b color185 ft20">
+      <div class="flex flex_column ">
+        <img src="../../assets/icon/home_head_1.png" alt="">
+        消息
+      </div>
+      <div class="flex flex_column">
+        <img src="../../assets/icon/home_head_2.png" alt="">
+        充值
+      </div>
+      <div class="flex flex_column">
+        <img src="../../assets/icon/home_head_3.png" alt="">
+        提现
+      </div>
+    </div>
+  </div>
+  <div text-center class="lottery_info flex flex_column mt22 relative ">
+    <div class="record_info absolute ft22 color255">揭晓记录</div>
+    <div class="lottery_num">
+      <span>3</span>
+      <span>0</span>
+      <span>5</span>
+      <span>2</span>
+      <span>7</span>
+    </div>
+    <div class="lottery_next absolute color255 ft24">
+      <div><i class="point"></i> 距第<span>20181017088</span>期开奖倒计时</div>
+      <div class="next_time ft22"><span>06</span> 分<span>54</span>秒<span>06</span></div>
+    </div>
+  </div>
+
 </ion-content>
