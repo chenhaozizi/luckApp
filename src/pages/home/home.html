@@ -15,11 +15,12 @@
 </ion-header>
 
 <ion-content padding class="bg_main_color">
+  <!-- 头部功能 -->
   <div class="menu_top flex ">
     <div class="menu_top_left flex bg_white">
       <div class="user border_50 over_hidden"><img src="../../assets/imgs/logo.png" alt=""></div>
       <div class="user_info flex flex_column flex_left_center ml20">
-        <div class="color82"><span class="border_50 bg_active_color ft28 money_iocn">币</span>32740.00 </div>
+        <div class="color82 ft28 "><span class="border_50 bg_active_color money_iocn color255">币</span>32740.00 </div>
         <div class="color165 ft22">ID:5261</div>
       </div>
     </div>
@@ -38,19 +39,92 @@
       </div>
     </div>
   </div>
-  <div text-center class="lottery_info flex flex_column mt22 relative ">
+  <!-- 开奖信息 -->
+  <div text-center class="lottery_info flex flex_column flex_center_center mt22 relative ">
     <div class="record_info absolute ft22 color255">揭晓记录</div>
-    <div class="lottery_num">
+    <div class="lottery_num flex  ft40 ft_bold color333">
       <span>3</span>
       <span>0</span>
       <span>5</span>
       <span>2</span>
-      <span>7</span>
+      <span class="red">7</span>
     </div>
-    <div class="lottery_next absolute color255 ft24">
-      <div><i class="point"></i> 距第<span>20181017088</span>期开奖倒计时</div>
+    <div class="lottery_next absolute color255 ft24  flex flex_center_center">
+      <div class="next_num ft_PF_Regular flex flex_center_center"><i class="point"></i> 距第<span>20181017088</span>期开奖倒计时</div>
       <div class="next_time ft22"><span>06</span> 分<span>54</span>秒<span>06</span></div>
     </div>
   </div>
-
+  <!-- 抢购规则 -->
+  <div class="rules flex flex_center_center flex_s_b">
+    <img src="../../assets/icon/home_rules_l.png" alt="">
+    <div class="rules_text  ft20 color157 ft_line2">
+      根据当期揭晓号码的最后一位数字,单独即为"买"单成功,反之"买双"成功...
+    </div>
+    <img src="../../assets/icon/home_rules_r.png" alt="" class="mr20">
+  </div>
+  <!-- 优选商品 -->
+  <div class="goods">
+    <div class="title"><img src="../../assets/icon/home_title.png" alt=""></div>
+    <!-- 商品列表 -->
+    <div class="goods_list flex flex_center_center ">
+      <div class="goods_list_info flex flex_center_center flex_column">
+        <div class="goods_img_box flex flex_center_center"><img src="../../assets/imgs/goods1.png" alt="商品图"></div>
+        <div class="goods_info flex flex_center_center flex_s_b ">
+          <div class="goods_info_l flex_left_center">
+            <div class="goods_info_title ft_line1 ft24 color82 mb8">全国流量移动充值卡</div>
+            <div class="goods_info_price"><span>¥ 149</span> <span>¥ 279</span></div>
+          </div>
+          <div class="goods_info_r ft20 color255">抢购</div>
+        </div>
+      </div>
+    </div>
+    <div class="goods_list flex flex_center_center flex_s_b">
+      <div class="goods_list_info flex flex_center_center flex_column">
+        <div class="goods_img_box flex flex_center_center"><img src="../../assets/imgs/goods1.png" alt="商品图"></div>
+        <div class="goods_info flex flex_center_center flex_s_b ">
+          <div class="goods_info_l flex_left_center">
+            <div class="goods_info_title ft_line1 ft24 color82 mb8">全国流量移动充值卡</div>
+            <div class="goods_info_price"><span>¥ 149</span> <span>¥ 279</span></div>
+          </div>
+          <div class="goods_info_r ft20 color255">抢购</div>
+        </div>
+      </div>
+    </div>
+    <div class="goods_list flex flex_center_center flex_s_b">
+      <div class="goods_list_info flex flex_center_center flex_column">
+        <div class="goods_img_box flex flex_center_center"><img src="../../assets/imgs/goods1.png" alt="商品图"></div>
+        <div class="goods_info flex flex_center_center flex_s_b ">
+          <div class="goods_info_l flex_left_center">
+            <div class="goods_info_title ft_line1 ft24 color82 mb8">全国流量移动充值卡</div>
+            <div class="goods_info_price"><span>¥ 149</span> <span>¥ 279</span></div>
+          </div>
+          <div class="goods_info_r ft20 color255">抢购</div>
+        </div>
+      </div>
+    </div>
+    <div class="goods_list flex flex_center_center flex_s_b">
+      <div class="goods_list_info flex flex_center_center flex_column">
+        <div class="goods_img_box flex flex_center_center"><img src="../../assets/imgs/goods1.png" alt="商品图"></div>
+        <div class="goods_info flex flex_center_center flex_s_b ">
+          <div class="goods_info_l flex_left_center">
+            <div class="goods_info_title ft_line1 ft24 color82 mb8">全国流量移动充值卡</div>
+            <div class="goods_info_price"><span>¥ 149</span> <span>¥ 279</span></div>
+          </div>
+          <div class="goods_info_r ft20 color255">抢购</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
+
+<!-- 揭晓记录 -->
+<div class="modal_box flex flex_column flex_center_center">
+  <div class="record_info_box">
+    <div class="record_info_box_title flex flex_center_center mb10 mt22"> <i class="point"></i> 揭晓记录</div>
+    <div class="record_info_box_close"><img src="../../assets/icon/home_Announced record_close.png" alt=""></div>
+    <div class="">
+      
+    </div>
+  </div>
+ 
+</div>

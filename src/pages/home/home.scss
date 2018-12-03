@@ -43,46 +43,184 @@ page-home {
     }
   }
   .lottery_info{
-    height: 150px;
+    height: 160px;
     background: url(../../assets/icon/home_bannerbg.png) no-repeat;
     background-size: 100%; 
+    .lottery_num {
+      width: 70%;
+      justify-content: space-between;
+      .red{
+        color: #ff513f
+      }
+      span{
+        display: inline-block;
+        height: 56px;
+        width: 34px;
+        line-height: 56px;
+        text-align: center;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px  2px   #eee;
+        margin-bottom: 10px;
+      }
+      
+    }
   }
   .record_info{
     right: 8px;
     top: 3px;
     text-align: center
   }
-  .lottery_num{
-    width: 80%
-  }
   .point{
-    display: inline-block;
-    width: 8px;
-    height: 8px;
+    display:inline-block;
+    width: .4rem;
+    height: .4rem;
     background: white;
-    border-radius: 50%
+    border-radius: 50%;
+    margin-right: 3px;
   }
   .lottery_next{
     letter-spacing: 1px;
-    bottom: 0;
+    height: 24px;
+    bottom: 5px;
     left: 0;
     right: 0;
     div{
-      display: inline-block;
+      
+    }
+    .next_num{
+     
     }
     .next_time{
       span{
         display: inline-block;
         font-size: 1.4rem;
-        width: 27px;
+        padding: 0 4px;
         background: #fff;
         color: rgb(255, 109, 63);
-        margin: 0 6px;
-        border-radius:10px; 
+        margin: 0 4px;
+        border-radius:24px; 
         text-align: center;
       }
 
     }
   }
-  
+  .rules{
+    height: 40px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 10px auto;
+    img{
+      width: 45px;
+      height: 45px;
+    }
+    .rules_text{
+      height: 36px;
+      line-height: 18px;
+      margin: 10px 15px;
+    }
+  }
+  .goods{
+    margin: 10px auto;
+    overflow: hidden;
+
+    .title{
+      width: 37%;
+      text-align: center;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .goods_list{
+      &:nth-child(even){
+        margin-right: 4%
+      }
+      width: 48%;
+      margin-bottom: 10px;
+      float: left;
+      overflow: hidden;
+      .goods_list_info{
+        $width:100%;
+        width: $width;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 5px;
+        .goods_img_box{
+          height:174px;
+          width: 100%;
+          overflow: hidden;
+          img{
+            max-width: 80%;
+            height: auto;
+          }
+        }
+        .goods_info{
+          height: 46px;
+          width: 100%;
+          background: linear-gradient(to bottom,#f3f3f3, #fff  50%,#f3f3f3);
+          .goods_info_l{
+            width: 75%;
+           text-indent: 10px;
+            .goods_info_price span:first-child{
+             color: rgb(255,109,63);
+             margin-right: 8px;
+            }
+            .goods_info_price span:last-child{
+              color: rgb(187,187,187);
+              text-decoration: line-through 
+             }
+          }
+          .goods_info_r{
+            width: 25%;
+            background:#ff8500;
+            border-bottom-left-radius:25px;
+            border-top-left-radius:25px;
+            text-align: center;
+            height: 24px;
+            line-height: 24px;
+          }
+        }
+      }
+      
+    }
+  }
+  .modal_box{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba($color: #000000, $alpha: .4);
+    z-index: 99;
+    text-align: center;
+  }
+  .record_info_box{
+    position: relative;
+    height: 70%;
+    width: 90%;
+    background:#fff; 
+    border-radius: 20px;
+    .point{
+      width:8px;
+      height:8px;
+      border-radius: 50%;
+      border:2px solid #ff8500;
+    }
+    .record_info_box_close{
+      position: absolute;
+      width: 15%;
+      height:auto;
+      right: 0;
+      top: 0;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
 }
+
+ 
