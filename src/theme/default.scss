@@ -7,6 +7,9 @@ body{
   font-size: 1.2rem;
   font-size: 12px;
 }
+ul,li{
+  list-style: none
+}
 // @media screen and (min-width: 320px) {
 //     html {font-size: 12px;}
 // }
@@ -135,7 +138,9 @@ body{
 .color51 {
   color: rgb(51, 51, 51) !important;
 }
-
+.color65 {
+  color: rgb(65, 65, 65) !important;
+}
 .color102 {
   color: rgb(102, 102, 102);
 }
@@ -186,6 +191,9 @@ body{
 }
 .bg_active_color {
   background-color: #ff7c00 !important;
+}
+.main_color{
+  color: #ff7c00
 }
 .bg_white {
   background-color: #fff !important;

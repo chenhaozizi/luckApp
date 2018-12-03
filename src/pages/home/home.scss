@@ -202,11 +202,15 @@ page-home {
     width: 90%;
     background:#fff; 
     border-radius: 20px;
-    .point{
-      width:8px;
-      height:8px;
-      border-radius: 50%;
-      border:2px solid #ff8500;
+    overflow: hidden;
+    .record_info_box_title{
+      height: 42px;
+      .point{
+        width:8px;
+        height:8px;
+        border-radius: 50%;
+        border:2px solid #ff8500;
+      }
     }
     .record_info_box_close{
       position: absolute;
@@ -218,6 +222,38 @@ page-home {
         width: 100%;
         height: auto;
       }
+    }
+    .record_info_num_title{
+      div{
+        width: 30%;
+        text-align: center;
+      }
+      .buy_type{
+        display: inline-block;
+        background: #ccc;
+        border-radius: 24px;
+        height: 24px;
+        line-height: 24px;
+        width: 50px;
+      }
+      width: 100%;
+      background: #f2f2f2;
+      height: 36px;
+      line-height: 36px;
+    }
+    .record_info_num_list{
+      div{
+        width: 33.3%;
+        text-align: center;
+      }
+      .luck_num{
+        letter-spacing: 2px;
+      }
+      width: 90%;
+      margin: 0 auto;
+      height: 50px;
+      background: none!important;
+      border-bottom: 1px solid #eee
     }
   }
 

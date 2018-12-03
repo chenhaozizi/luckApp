@@ -41,7 +41,7 @@
   </div>
   <!-- 开奖信息 -->
   <div text-center class="lottery_info flex flex_column flex_center_center mt22 relative ">
-    <div class="record_info absolute ft22 color255">揭晓记录</div>
+    <div class="record_info absolute ft22 color255" (click)="showRecordInfoBox()" >揭晓记录</div>
     <div class="lottery_num flex  ft40 ft_bold color333">
       <span>3</span>
       <span>0</span>
@@ -118,13 +118,69 @@
 </ion-content>
 
 <!-- 揭晓记录 -->
-<div class="modal_box flex flex_column flex_center_center">
+<div class="modal_box flex flex_column flex_center_center" *ngIf="record_info_box" >
   <div class="record_info_box">
-    <div class="record_info_box_title flex flex_center_center mb10 mt22"> <i class="point"></i> 揭晓记录</div>
-    <div class="record_info_box_close"><img src="../../assets/icon/home_Announced record_close.png" alt=""></div>
-    <div class="">
-      
+    <div class="record_info_box_title flex flex_center_center ft_bold ft28 color65"> <i class="point"></i> 揭晓记录</div>
+    <div class="record_info_box_close" (click)="hideRecordInfoBox()" ><img src="../../assets/icon/home_Announced record_close.png" alt=""></div>
+    <div class="record_info_num_title flex flex_center_center ft26 color51">
+      <div>期号</div>
+      <div>揭晓号码</div>
+      <div>获胜情况</div>
     </div>
+    <!-- 数据 -->
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255 bg_active_color">买双</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买双</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+    <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+      <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+      <div class="luck_num">2677<span class="main_color">5</span></div>
+      <div><span class="buy_type ft28 color255">买单</span></div>
+    </div>
+
+
+
   </div>
- 
+
 </div>
