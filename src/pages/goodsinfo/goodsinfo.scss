@@ -1,0 +1,140 @@
+page-goodsinfo {
+  .goods_info_bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background: #fff;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .goods_info_box {
+    position: relative;
+    padding: 16px;
+    .cancel {
+      position: absolute;
+      width: 15%;
+      height: auto;
+      right: 0;
+      top: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .goods_info {
+      height: 120px;
+      .price {
+        height: 20px;
+      }
+      .price_hot {
+        padding: 1px 3px;
+        border-radius: 5px;
+      }
+    }
+    .goods_info_img {
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 0 1px #eee;
+      border-radius: 10px;
+      padding: 20px;
+      img {
+        width: 90px;
+        height: auto;
+      }
+    }
+  }
+  .next_time span {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 0 4px;
+    background: #fff;
+    color: #ff6d3f;
+    margin: 0 4px;
+    border-radius: 24px;
+    text-align: center;
+  }
+  .point {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: white;
+    border-radius: 50%;
+    margin-right: 3px;
+  }
+  .next {
+    padding: 5px 0;
+    border-radius: 30px;
+  }
+  .bg_gary {
+    background-color: rgb(241, 241, 241);
+  }
+  .buyType {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .buyType div {
+    padding: 5px 0;
+    letter-spacing: 2px;
+    width: 70px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 25px;
+    background-color: rgb(241, 241, 241);
+  }
+  .buy_active {
+    background-color: rgb(255, 130, 0) !important;
+    color: rgb(255, 255, 255) !important;
+  }
+  .pont {
+    height: 24px;
+    line-height: 24px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .buy_num {
+    
+  }
+  .buy_num span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(241, 241, 241);
+    margin: 0 1%;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    color:rgb(13,12,12);
+    &:last-child{
+        width: 38%;
+        margin-right: 0;
+    }
+  }
+  .pay_box{
+    position: relative;
+    width: 90%;
+    height: 39px;
+    border-radius: 39px;
+    margin: 30px auto 0;
+    .pay_btn{
+      position: absolute;
+      width: 101px;
+      right: 0;
+      height: 39px;
+      line-height: 39px;
+      border-radius: 39px;
+      text-align: center;
+    }
+    .pay_money{
+      width: 150px;
+      text-align: center;
+    }
+  }
+  
+}

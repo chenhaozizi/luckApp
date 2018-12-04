@@ -115,6 +115,9 @@ ul,li{
 .ft20 {
   font-size: 1rem !important;
 }
+.ft18{
+  font-size: .9rem !important;
+}
 .ft16 {
   font-size: 0.8rem !important;
 }
@@ -180,9 +183,14 @@ ul,li{
 .color255 {
   color: rgb(255, 255, 255);
 }
+
 .ft_bold {
   font-weight: bold;
 }
+.ft_normal{
+  font-weight: normal
+}
+
 .bg {
   padding: 0 16px;
 }
@@ -231,6 +239,9 @@ ul,li{
 }
 .mb6 {
   margin-bottom: 3px !important;
+}
+.m_t_b30{
+  margin: 15px auto;
 }
 .pb0 {
   padding-bottom: 0px !important;
@@ -290,4 +301,16 @@ ul,li{
 }
 .border_50 {
   border-radius: 50%;
+}
+.red_active{
+  color: rgb(255, 109, 63)
+}
+.ft_mid_through{
+  text-decoration: line-through
+}
+.line_height24{
+  line-height: 24px
+}
+.line_height20{
+  line-height: 20px
 }
