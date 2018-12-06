@@ -144,8 +144,20 @@ ul,li{
 .color65 {
   color: rgb(65, 65, 65) !important;
 }
+.color57{
+  color: rgb(57, 57, 57)
+}
 .color102 {
   color: rgb(102, 102, 102);
+}
+.color179{
+  color: rgb(179, 179, 179)
+}
+.color94{
+  color:rgb(94, 94, 94)
+}
+.color111{
+  color:rgb(111, 111, 111)
 }
 .color82 {
   color: rgb(82, 82, 82);
@@ -249,6 +261,9 @@ ul,li{
 .pt0 {
   padding-top: 0px !important;
 }
+.pl0{
+   padding-left: 0!important;
+}
 .flex {
   display: flex !important;
 }
@@ -313,4 +328,33 @@ ul,li{
 }
 .line_height20{
   line-height: 20px
+}
+.no_t_b_border{
+  border: none!important;
+  border-width: 0!important;
+}
+.border_b{
+  border-bottom: 1px solid #eee!important;
+}
+
+// 选项切换卡
+.mytabs{
+  overflow: hidden;
+  .grid{
+    height: 35px;
+    width: 96%;
+    border-radius: 35px;
+    background: #fff;
+    .tap-active{
+      background: #FF7C00;
+      color: rgb(255, 255, 255)!important;
+      border-radius: 35px;
+    }
+  }
+}
+.list_bg_white{
+  min-height: 75vh;
+  background: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }

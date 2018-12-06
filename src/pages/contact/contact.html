@@ -1,13 +1,222 @@
-<ion-header>
+<ion-header no-border>
   <ion-navbar>
     <ion-title>
-      动态
+      新半价商城
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-   
-  </ion-list>
+<ion-content class="bg_main_color">
+  <div class="mytabs color51 ft26" text-center>
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let item of tabs,let i = index" (click)="checktab(i)" class="text-center " [ngClass]="{'tap-active':item.isSelect}">
+          {{item.key}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="list_bg_white mt22" padding>
+    <!-- 参与和获奖记录 -->
+    <ion-list no-lines *ngIf="select!==2">
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+      <ion-item class="border_b pl0 ">
+        <ion-avatar item-start class="mr10">
+          <img src="../../assets/imgs/logo.png">
+        </ion-avatar>
+        <p class="ft20 color111">Jack小弟弟</p>
+        <p class="ft22 color94 ft_bold">抢购一张手机充值卡20元面值</p>
+        <p item-end class="flex flex_column  ft22" text-right>
+          <span class="color">购买数量 <b class="red_active">×10</b></span>
+          <span class="ft20 color179">2018.0913</span>
+        </p>
+      </ion-item>
+
+
+
+    </ion-list>
+    <!-- 揭晓记录 -->
+    <div *ngIf="select==2">
+      <div class="record_info_num_title flex flex_center_center ft26 color51">
+        <div>期号</div>
+        <div>揭晓号码</div>
+        <div>获胜情况</div>
+      </div>
+      <!-- 数据 -->
+      <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+        <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+        <div class="luck_num">2677<span class="main_color">5</span></div>
+        <div><span class="buy_type ft28 color255">买单</span></div>
+      </div>
+      <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+        <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+        <div class="luck_num">2677<span class="main_color">5</span></div>
+        <div><span class="buy_type ft28 color255 bg_active_color">买单</span></div>
+      </div>
+      <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+        <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+        <div class="luck_num">2677<span class="main_color">5</span></div>
+        <div><span class="buy_type ft28 color255">买单</span></div>
+      </div>
+      <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+        <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+        <div class="luck_num">2677<span class="main_color">5</span></div>
+        <div><span class="buy_type ft28 color255">买单</span></div>
+      </div>
+      <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+        <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+        <div class="luck_num">2677<span class="main_color">5</span></div>
+        <div><span class="buy_type ft28 color255 bg_active_color">买单</span></div>
+      </div>
+      <div class="record_info_num_title  record_info_num_list flex flex_center_center">
+        <div class="ft24 color153 ft_PF_Regular">20181017088</div>
+        <div class="luck_num">2677<span class="main_color">5</span></div>
+        <div><span class="buy_type ft28 color255">买单</span></div>
+      </div>
+
+    </div>
+  </div>
+
 </ion-content>
