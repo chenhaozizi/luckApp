@@ -1,5 +1,6 @@
 {
   "name": "luckApp",
   "integrations": {},
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "id": "f651968c"
 }

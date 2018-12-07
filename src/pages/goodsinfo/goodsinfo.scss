@@ -1,4 +1,5 @@
 page-goodsinfo {
+  background: rgba(0, 0, 0, 0.4);
   .goods_info_bg {
     position: fixed;
     left: 0;
@@ -114,6 +115,9 @@ page-goodsinfo {
     &:last-child{
         width: 38%;
         margin-right: 0;
+        input{
+          margin: 0 auto!important;
+        }
     }
   }
   .pay_box{
@@ -135,6 +139,9 @@ page-goodsinfo {
       width: 150px;
       text-align: center;
     }
+  }
+  .text-input-ios{
+   margin: 0 auto!important;
   }
   
 }

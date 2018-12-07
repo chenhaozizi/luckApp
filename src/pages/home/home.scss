@@ -143,8 +143,11 @@ page-home {
       float: left;
       overflow: hidden;
       .goods_list_info{
-        $width:100%;
-        width: $width;
+        &:hover{
+          border-color: rgba($color: #ff8500, $alpha: .4) ;
+        }
+        border: 1px solid #eee;
+        width:100%;
         overflow: hidden;
         background: #fff;
         border-radius: 5px;

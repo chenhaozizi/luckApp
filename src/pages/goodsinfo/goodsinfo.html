@@ -13,8 +13,9 @@
       <div class="goods_info_text flex flex_column flex_left_center ">
         <div class="title ft_line2 color51 ft22 line_height20 mb8">Apple/苹果 iPhone xs max 苹果xs max Apple/苹果 iPhone xs
           max 苹果xs max</div>
-        <div class="price ft34  flex flex_center_center flex_left_center red_active ft_bold"><span class="bg_active_color  color255 ft18 mr10 price_hot ft_normal">抢购价</span>¥6980<span
-            class="color153 ft_mid_through ft24 ml20 ft_normal">¥8980</span></div>
+        <div class="price ft34  flex flex_center_center flex_left_center red_active ft_bold">
+          <span class="bg_active_color  color255 ft18 mr10 price_hot ft_normal">抢购价</span>¥{{price}}
+          <span class="color153 ft_mid_through ft24 ml20 ft_normal">¥8980</span></div>
       </div>
     </div>
     <div class="bg_active_color next">
@@ -24,26 +25,24 @@
       </div>
     </div>
     <div class="buyType m_t_b30 ft24 color51 flex  flex_left_center">
-      <div class="buy_active">买单</div>
-      <div>买双</div>
+      <div [ngClass]="{'buy_active':buyTypeNum==1}" (click)="buyType(1)">买单</div>
+      <div [ngClass]="{'buy_active':buyTypeNum==2}" (click)="buyType(2)">买双</div>
     </div>
     <div class="m_t_b30 ">
       <div class="color51 pont flex"><i class="point bg_active_color" style="margin-bottom: 2px"></i>抢购数量</div>
     </div>
     <div class="buy_num">
-      <span class="buy_active">1</span>
-      <span>5</span>
-      <span>10</span>
-      <span>20</span>
-      <span>30</span>
-      <span>50</span>
-      <span>80</span>
-      <span>100</span>
-      <span>其他数量</span>
+      <span *ngFor="let item of buyNum,let i= index" (click)="buyNumF(i)" [ngClass]="{'buy_active':item.isPicked}">
+        {{item.num}}
+      </span>
+      <span [ngClass]="{'buy_active':onInput}">
+        <ion-input type="number" text-center [(ngModel)]="buyNum_input" (ionChange)="buyNum_inputF()" placeholder="其他数量"
+          class="color255" (focus)="onFocus()" (blur)="onBlur()"></ion-input>
+      </span>
     </div>
     <div class="pay_box bg_gary flex  flex_center_center flex_s_b">
-      <div class="pay_money ft24"> 合计支付：¥  <span class="red_active ft34 ft_bold">4980</span></div>
-      <div class="pay_btn ft28 bg_active_color color255" (click)="dismiss()" >立即购买</div>
+      <div class="pay_money ft24"> 合计支付：¥ <span class="red_active ft34 ft_bold">{{totalPrice}}</span></div>
+      <div class="pay_btn ft28 bg_active_color color255" (click)="dismiss()">立即购买</div>
     </div>
   </div>
 </div>
