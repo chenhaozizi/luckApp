@@ -264,6 +264,9 @@ ul,li{
 .pl0{
    padding-left: 0!important;
 }
+.p0{
+  padding: 0!important;
+}
 .flex {
   display: flex !important;
 }
@@ -349,6 +352,11 @@ ul,li{
       background: #FF7C00;
       color: rgb(255, 255, 255)!important;
       border-radius: 35px;
+    }
+    .col{
+      padding: 0;
+      height: 35px;
+      line-height: 35px;
     }
   }
 }

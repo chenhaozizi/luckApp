@@ -6,7 +6,7 @@
 
 <ion-content class="bg_main_color">
   <div class="mytabs color51 ft26" text-center>
-    <ion-grid>
+    <ion-grid class="p0">
       <ion-row>
         <ion-col *ngFor="let item of tabs,let i = index" (click)="checktab(i)" class="text-center " [ngClass]="{'tap-active':item.isSelect}">
           {{item.key}}
