@@ -45,7 +45,7 @@ page-home {
   }
   .lottery_info{
     height: 160px;
-    background: url(../../assets/icon/home_bannerbg.png) no-repeat;
+    background: url(../assets/icon/home_bannerbg.png) no-repeat;
     background-size: 100%; 
     .lottery_num {
       width: 70%;
@@ -83,20 +83,15 @@ page-home {
   .lottery_next{
     letter-spacing: 1px;
     height: 24px;
-    bottom: 5px;
+    bottom: 7px;
     left: 0;
     right: 0;
-    div{
-      
-    }
-    .next_num{
-     
-    }
     .next_time{
       span{
         display: inline-block;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 0 3px;
+        min-width: 24px;
         background: #fff;
         color: rgb(255, 109, 63);
         margin: 0 4px;
